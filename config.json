@@ -1,0 +1,5 @@
+{
+  "autoprefixer": {
+    "browsers": "last 4 versions, not ie <= 8"
+  }
+}

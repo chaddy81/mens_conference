@@ -38,17 +38,17 @@ footer a, footer a:hover { color: #fff; }
 .details-row .details h3 { -webkit-font-smoothing: antialiased; font-weight: 500; }
 .details-row .details-1 { background: url("../img/details-1.jpg") center center no-repeat; background-size: cover; }
 .details-row .details-1 a { color: #fff; cursor: pointer; display: block; font-size: 20px; font-weight: 400; margin-top: 37%; text-decoration: none; }
-.details-row .details-1 a:after { border-left: 28px solid #fff; border-bottom: 20px solid transparent; border-top: 20px solid transparent; content: ''; display: block; left: 50%; margin-top: 15px; position: absolute; transform: translateX(-50%); }
+.details-row .details-1 a:after { border-left: 28px solid #fff; border-bottom: 20px solid transparent; border-top: 20px solid transparent; content: ''; display: block; left: 50%; margin-top: 15px; position: absolute; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
 .details-row .details-2 { background: url("../img/details-2.jpg") center center no-repeat; background-size: cover; }
 .details-row .details-2 p { font-size: 14px; }
-.details-row .details-2 .btn { bottom: 60px; left: 50%; position: absolute; transform: translateX(-50%); }
+.details-row .details-2 .btn { bottom: 60px; left: 50%; position: absolute; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
 .details-row .details-3 { background: url("../img/details-3.jpg") center center no-repeat; background-size: cover; }
-.details-row .details-3 .btn { bottom: 60px; left: 50%; position: absolute; transform: translateX(-50%); }
+.details-row .details-3 .btn { bottom: 60px; left: 50%; position: absolute; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
 .details-row .details-4 { padding: 0; }
 .details-row .details-4 .sponsors { background: url("../img/sponsor-back.jpg") center center no-repeat; background-size: cover; height: 50%; position: relative; }
-.details-row .details-4 .sponsors .btn { left: 50%; margin-left: -100px; position: absolute; top: 50%; transform: translateY(-50%); }
+.details-row .details-4 .sponsors .btn { left: 50%; margin-left: -100px; position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
 .details-row .details-4 .contact { background: url("../img/contact-back.jpg") center center no-repeat; background-size: cover; height: 50%; position: relative; }
-.details-row .details-4 .contact .btn { left: 50%; margin-left: -100px; position: absolute; top: 50%; transform: translateY(-50%); }
+.details-row .details-4 .contact .btn { left: 50%; margin-left: -100px; position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
 
 /* Modal */
 .modal-backdrop { background: url("../img/modal-back.png") center center no-repeat; background-size: cover; }
@@ -79,5 +79,4 @@ footer a, footer a:hover { color: #fff; }
   .modal-footer { border: none; }
   .modal-footer p { font-size: 16px; text-align: center; }
   .modal-footer .btn, .modal-footer .btn:hover { display: block; margin: 20px auto 0; } }
-
 /*# sourceMappingURL=main.css.map */
