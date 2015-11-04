@@ -25,9 +25,16 @@ body {
 }
 
 .navbar {
-  height: 235px;
   margin: 0 auto;
   max-width: 992px;
+
+  .navbar-header .navbar-brand {
+    color: $dark-gray;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 66px;
+    padding: 0;
+  }
 
   .btn, .btn:hover {
     border-color: $red-button-border;
@@ -339,20 +346,34 @@ footer {
 @media (max-width: 480px) {
   .navbar {
     .navbar-header {
-      float: left;
+      display: block;
+      float: none;
+      text-align: center;
+
+      .navbar-brand {
+        display: block;
+        height: auto;
+        line-height: 2;
+        margin-top: 20px;
+        width: 100%;
+      }
     }
 
     .navbar-right {
-      float: right;
-      text-align: left;
+      display: block;
+      float: none;
+      line-height: 2;
+      text-align: center;
     }
 
     span {
-      display: none;
+      display: block;
+      line-height: 2;
     }
 
     .btn, .btn:hover {
-      margin-top: 85px;
+      margin-bottom: 20px;
+      margin-top: 15px;
     }
   }
   .speaker-row, .details-row {
@@ -374,7 +395,8 @@ footer {
     }
 
     .navbar-right {
-      float: right;
+      float: right !important;
+      line-height: 46px !important;
     }
   }
 

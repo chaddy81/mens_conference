@@ -6,7 +6,8 @@ body { font-family: 'Raleway', sans-serif; }
 
 .container { height: 100%; max-width: 100%; width: 1600px; }
 
-.navbar { height: 235px; margin: 0 auto; max-width: 992px; }
+.navbar { margin: 0 auto; max-width: 992px; }
+.navbar .navbar-header .navbar-brand { color: #2a2a2a; display: inline-block; font-size: 18px; line-height: 66px; padding: 0; }
 .navbar .btn, .navbar .btn:hover { border-color: #70352d; color: #70352d; font-size: 12px; margin-left: 20px; margin-top: -3px; padding: 8px 12px 6px; }
 .navbar span { color: #70352d; font-size: 18px; line-height: 66px; }
 
@@ -38,17 +39,17 @@ footer a, footer a:hover { color: #fff; }
 .details-row .details h3 { -webkit-font-smoothing: antialiased; font-weight: 500; }
 .details-row .details-1 { background: url("../img/details-1.jpg") center center no-repeat; background-size: cover; }
 .details-row .details-1 a { color: #fff; cursor: pointer; display: block; font-size: 20px; font-weight: 400; margin-top: 37%; text-decoration: none; }
-.details-row .details-1 a:after { border-left: 28px solid #fff; border-bottom: 20px solid transparent; border-top: 20px solid transparent; content: ''; display: block; left: 50%; margin-top: 15px; position: absolute; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
+.details-row .details-1 a:after { border-left: 28px solid #fff; border-bottom: 20px solid transparent; border-top: 20px solid transparent; content: ''; display: block; left: 50%; margin-top: 15px; position: absolute; transform: translateX(-50%); }
 .details-row .details-2 { background: url("../img/details-2.jpg") center center no-repeat; background-size: cover; }
 .details-row .details-2 p { font-size: 14px; }
-.details-row .details-2 .btn { bottom: 60px; left: 50%; position: absolute; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
+.details-row .details-2 .btn { bottom: 60px; left: 50%; position: absolute; transform: translateX(-50%); }
 .details-row .details-3 { background: url("../img/details-3.jpg") center center no-repeat; background-size: cover; }
-.details-row .details-3 .btn { bottom: 60px; left: 50%; position: absolute; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
+.details-row .details-3 .btn { bottom: 60px; left: 50%; position: absolute; transform: translateX(-50%); }
 .details-row .details-4 { padding: 0; }
 .details-row .details-4 .sponsors { background: url("../img/sponsor-back.jpg") center center no-repeat; background-size: cover; height: 50%; position: relative; }
-.details-row .details-4 .sponsors .btn { left: 50%; margin-left: -100px; position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
+.details-row .details-4 .sponsors .btn { left: 50%; margin-left: -100px; position: absolute; top: 50%; transform: translateY(-50%); }
 .details-row .details-4 .contact { background: url("../img/contact-back.jpg") center center no-repeat; background-size: cover; height: 50%; position: relative; }
-.details-row .details-4 .contact .btn { left: 50%; margin-left: -100px; position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
+.details-row .details-4 .contact .btn { left: 50%; margin-left: -100px; position: absolute; top: 50%; transform: translateY(-50%); }
 
 /* Modal */
 .modal-backdrop { background: url("../img/modal-back.png") center center no-repeat; background-size: cover; }
@@ -67,16 +68,18 @@ footer a, footer a:hover { color: #fff; }
   .navbar .navbar-right { float: right; text-align: center; }
   .navbar span { display: block; font-size: 16px; }
   .navbar .btn { margin-top: 0; } }
-@media (max-width: 480px) { .navbar .navbar-header { float: left; }
-  .navbar .navbar-right { float: right; text-align: left; }
-  .navbar span { display: none; }
-  .navbar .btn, .navbar .btn:hover { margin-top: 85px; }
+@media (max-width: 480px) { .navbar .navbar-header { display: block; float: none; text-align: center; }
+  .navbar .navbar-header .navbar-brand { display: block; height: auto; line-height: 2; margin-top: 20px; width: 100%; }
+  .navbar .navbar-right { display: block; float: none; line-height: 2; text-align: center; }
+  .navbar span { display: block; line-height: 2; }
+  .navbar .btn, .navbar .btn:hover { margin-bottom: 20px; margin-top: 15px; }
   .speaker-row, .details-row { height: auto; max-height: none; min-height: auto; }
   .speaker, .details-row .details { display: block; float: none; height: 457px; width: 100%; }
   footer .navbar-left { float: left; }
-  footer .navbar-right { float: right; }
+  footer .navbar-right { float: right !important; line-height: 46px !important; }
   .modal-content h3 { font-size: 20px; }
   .modal-footer { border: none; }
   .modal-footer p { font-size: 16px; text-align: center; }
   .modal-footer .btn, .modal-footer .btn:hover { display: block; margin: 20px auto 0; } }
+
 /*# sourceMappingURL=main.css.map */
