@@ -6,7 +6,7 @@ body { font-family: 'Raleway', sans-serif; }
 
 .container { height: 100%; max-width: 100%; width: 1600px; }
 
-.navbar { margin: 0 auto; max-width: 992px; }
+.navbar { margin: 0 auto; padding: 0 15px; }
 .navbar .navbar-header .navbar-brand { color: #2a2a2a; display: inline-block; font-size: 18px; line-height: 66px; padding: 0; }
 .navbar .btn, .navbar .btn:hover { border-color: #70352d; color: #70352d; font-size: 12px; margin-left: 20px; margin-top: -3px; padding: 8px 12px 6px; }
 .navbar span { color: #70352d; font-size: 18px; line-height: 66px; }
@@ -21,12 +21,12 @@ footer a, footer a:hover { color: #fff; }
 /* Speakers */
 .speaker-row { height: 50%; max-height: 457px; min-height: 392px; }
 
-.speaker { box-sizing: border-box; float: left; height: 100%; padding: 10px; position: relative; width: 20%; }
-.speaker.speaker-1 { background: url("../img/speaker-1.jpg") center center no-repeat; background-size: cover; }
-.speaker.speaker-2 { background: url("../img/speaker-2.jpg") center center no-repeat; background-size: cover; }
-.speaker.speaker-3 { background: url("../img/speaker-3.jpg") center center no-repeat; background-size: cover; }
-.speaker.speaker-4 { background: url("../img/speaker-4.jpg") center center no-repeat; background-size: cover; }
-.speaker.speaker-5 { background: url("../img/speaker-5.jpg") center center no-repeat; background-size: cover; }
+.speaker { box-sizing: border-box; cursor: pointer; float: left; height: 100%; padding: 10px; position: relative; width: 20%; }
+.speaker.speaker-1 { background: url("../img/mccarthy.jpg") center center no-repeat; background-size: cover; }
+.speaker.speaker-2 { background: url("../img/vandehey.jpg") center center no-repeat; background-size: cover; }
+.speaker.speaker-3 { background: url("../img/mitchell.jpg") center center no-repeat; background-size: cover; }
+.speaker.speaker-4 { background: url("../img/soave.jpg") center center no-repeat; background-size: cover; }
+.speaker.speaker-5 { background: url("../img/tba.jpg") center center no-repeat; background-size: cover; }
 .speaker .speaker-details { bottom: 15px; color: #fff; position: absolute; text-transform: uppercase; }
 .speaker .speaker-details p { font-size: 12px; font-weight: 500; line-height: 1.6; margin: 0; }
 .speaker .speaker-details h4 { font-size: 21px; font-weight: 400; line-height: 1; margin: 0; }
@@ -37,9 +37,8 @@ footer a, footer a:hover { color: #fff; }
 .details-row .details hr { background: #fff; border: none !important; height: 1px; margin: 10px 0; }
 .details-row .details ul { -webkit-font-smoothing: antialiased; font-size: 18px; font-weight: 500; list-style-type: none; margin: 0 0 40px; padding: 0; }
 .details-row .details h3 { -webkit-font-smoothing: antialiased; font-weight: 500; }
-.details-row .details-1 { background: url("../img/details-1.jpg") center center no-repeat; background-size: cover; }
-.details-row .details-1 a { color: #fff; cursor: pointer; display: block; font-size: 20px; font-weight: 400; margin-top: 37%; text-decoration: none; }
-.details-row .details-1 a:after { border-left: 28px solid #fff; border-bottom: 20px solid transparent; border-top: 20px solid transparent; content: ''; display: block; left: 50%; margin-top: 15px; position: absolute; transform: translateX(-50%); }
+.details-row .details-1 { background: #E4C598 url("../img/logo.png") center center no-repeat; background-size: cover; }
+.details-row .details-1 a { cursor: pointer; display: block; height: 100%; width: 100%; }
 .details-row .details-2 { background: url("../img/details-2.jpg") center center no-repeat; background-size: cover; }
 .details-row .details-2 p { font-size: 14px; }
 .details-row .details-2 .btn { bottom: 60px; left: 50%; position: absolute; transform: translateX(-50%); }
@@ -63,11 +62,33 @@ footer a, footer a:hover { color: #fff; }
 .modal-footer p { color: #cf5530; font-size: 18px; }
 .modal-footer .btn, .modal-footer .btn:hover { border-color: #70352d; color: #70352d; font-size: 12px; margin-left: 20px; margin-top: -3px; padding: 8px 12px 6px; width: 155px; }
 
+#sponsors img { padding: 20px; }
+#sponsors p { margin-top: 20px; }
+#sponsors p a { color: #cf5530; font-size: 16px; text-decoration: underline; }
+
+#event-details table { margin: 0 auto; }
+#event-details table th { font-weight: bold; text-align: center; }
+#event-details table td { padding: 5px 10px; text-align: left; }
+#event-details table tr { border-bottom: 1px solid #ccc; }
+
+#accomodations ul { list-style-type: none; }
+#accomodations ul li { margin-bottom: 20px; }
+#accomodations ul a { display: block; margin-top: 5px; }
+
+#contact form { margin: 20px auto; width: 280px; }
+#contact input[type=text], #contact textarea { border: 1px solid #ccc; font-size: 16px; padding: 5px; width: 100%; }
+#contact input[type=submit] { border-color: #70352d; color: #70352d; font-size: 16px; width: 100%; }
+
 /* Media Queries */
-@media (max-width: 767px) { .navbar .navbar-header { float: left; }
-  .navbar .navbar-right { float: right; text-align: center; }
-  .navbar span { display: block; font-size: 16px; }
-  .navbar .btn { margin-top: 0; } }
+@media (max-width: 991px) { .navbar .navbar-header { display: block; float: none; text-align: center; }
+  .navbar .navbar-header .navbar-brand { display: block; height: auto; line-height: 2; margin-top: 20px; width: 100%; }
+  .navbar .navbar-right { display: block; float: none !important; line-height: 2; text-align: center; }
+  .navbar span { display: block; line-height: 2; }
+  .navbar .btn, .navbar .btn:hover { margin-bottom: 20px; margin-top: 15px; }
+  .details-row .details { float: left; height: 457px; width: 50%; } }
+@media (max-width: 767px) { .details-row { height: auto; max-height: inherit; }
+  footer .navbar .navbar-left { float: left; line-height: 46px; }
+  footer .navbar .navbar-right { float: right !important; line-height: 46px; } }
 @media (max-width: 480px) { .navbar .navbar-header { display: block; float: none; text-align: center; }
   .navbar .navbar-header .navbar-brand { display: block; height: auto; line-height: 2; margin-top: 20px; width: 100%; }
   .navbar .navbar-right { display: block; float: none; line-height: 2; text-align: center; }
@@ -75,6 +96,8 @@ footer a, footer a:hover { color: #fff; }
   .navbar .btn, .navbar .btn:hover { margin-bottom: 20px; margin-top: 15px; }
   .speaker-row, .details-row { height: auto; max-height: none; min-height: auto; }
   .speaker, .details-row .details { display: block; float: none; height: 457px; width: 100%; }
+  #event-details table td { max-width: 220px; }
+  footer .navbar { padding: 0; }
   footer .navbar-left { float: left; }
   footer .navbar-right { float: right !important; line-height: 46px !important; }
   .modal-content h3 { font-size: 20px; }

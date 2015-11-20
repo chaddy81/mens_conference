@@ -26,7 +26,8 @@ body {
 
 .navbar {
   margin: 0 auto;
-  max-width: 992px;
+  // max-width: 992px;
+  padding: 0 15px;
 
   .navbar-header .navbar-brand {
     color: $dark-gray;
@@ -94,6 +95,7 @@ footer {
 
 .speaker {
   box-sizing: border-box;
+  cursor: pointer;
   float: left;
   height: 100%;
   padding: 10px;
@@ -101,27 +103,27 @@ footer {
   width: 20%;
 
   &.speaker-1 {
-    background: url('../img/speaker-1.jpg') center center no-repeat;
+    background: url('../img/mccarthy.jpg') center center no-repeat;
     background-size: cover;
   }
 
   &.speaker-2 {
-    background: url('../img/speaker-2.jpg') center center no-repeat;
+    background: url('../img/vandehey.jpg') center center no-repeat;
     background-size: cover;
   }
 
   &.speaker-3 {
-    background: url('../img/speaker-3.jpg') center center no-repeat;
+    background: url('../img/mitchell.jpg') center center no-repeat;
     background-size: cover;
   }
 
   &.speaker-4 {
-    background: url('../img/speaker-4.jpg') center center no-repeat;
+    background: url('../img/soave.jpg') center center no-repeat;
     background-size: cover;
   }
 
   &.speaker-5 {
-    background: url('../img/speaker-5.jpg') center center no-repeat;
+    background: url('../img/tba.jpg') center center no-repeat;
     background-size: cover;
   }
 
@@ -184,29 +186,14 @@ footer {
   }
 
   .details-1 {
-    background: url('../img/details-1.jpg') center center no-repeat;
+    background: #E4C598 url('../img/logo.png') center center no-repeat;
     background-size: cover;
 
     a {
-      color: #fff;
       cursor: pointer;
       display: block;
-      font-size: 20px;
-      font-weight: 400;
-      margin-top: 37%;
-      text-decoration: none;
-
-      &:after {
-        border-left: 28px solid #fff;
-        border-bottom: 20px solid transparent;
-        border-top: 20px solid transparent;
-        content: '';
-        display: block;
-        left: 50%;
-        margin-top: 15px;
-        position: absolute;
-        transform: translateX(-50%);
-      }
+      height: 100%;
+      width: 100%;
     }
   }
 
@@ -319,26 +306,136 @@ footer {
   }
 }
 
-/* Media Queries */
+#sponsors {
+  img {
+    padding: 20px;
+  }
 
-@media (max-width: 767px) {
+  p {
+    margin-top: 20px;
+    a {
+      color: #cf5530;
+      font-size: 16px;
+      text-decoration: underline;
+    }
+  }
+}
+
+#event-details {
+  table {
+    margin: 0 auto;
+
+    th {
+      font-weight: bold;
+      text-align: center;
+    }
+
+    td {
+      padding: 5px 10px;
+      text-align: left;
+    }
+
+    tr {
+      border-bottom: 1px solid #ccc;
+    }
+  }
+}
+
+#accomodations {
+  ul {
+    list-style-type: none;
+
+    li {
+      margin-bottom: 20px;
+    }
+
+    a {
+      display: block;
+      margin-top: 5px;
+    }
+  }
+}
+
+#contact {
+  form {
+    margin: 20px auto;
+    width: 280px;
+  }
+
+  input[type=text], textarea {
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding: 5px;
+    width: 100%;
+  }
+
+  input[type=submit] {
+    border-color: $red-button-border;
+    color: $red-button-border;
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
   .navbar {
     .navbar-header {
-      float: left;
+      display: block;
+      float: none;
+      text-align: center;
+
+      .navbar-brand {
+        display: block;
+        height: auto;
+        line-height: 2;
+        margin-top: 20px;
+        width: 100%;
+      }
     }
 
     .navbar-right {
-      float: right;
+      display: block;
+      float: none !important;
+      line-height: 2;
       text-align: center;
     }
 
     span {
       display: block;
-      font-size: 16px;
+      line-height: 2;
     }
 
-    .btn {
-      margin-top: 0;
+    .btn, .btn:hover {
+      margin-bottom: 20px;
+      margin-top: 15px;
+    }
+  }
+
+  .details-row .details {
+    float: left;
+    height: 457px;
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .details-row {
+    height: auto;
+    max-height: inherit;
+  }
+
+  footer {
+    .navbar {
+      .navbar-left {
+        float: left;
+        line-height: 46px;
+      }
+
+      .navbar-right {
+        float: right !important;
+        line-height: 46px;
+      }
     }
   }
 }
@@ -389,7 +486,19 @@ footer {
     width: 100%;
   }
 
+  #event-details {
+    table {
+      td {
+        max-width: 220px;
+      }
+    }
+  }
+
   footer {
+    .navbar {
+      padding: 0;
+    }
+
     .navbar-left {
       float: left;
     }
