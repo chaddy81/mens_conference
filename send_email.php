@@ -15,6 +15,5 @@ $email->addTo($to)->
        addHeader('X-Sent-Using', 'SendGrid-API')->
        addHeader('X-Transport', 'web');
 
-$response = $sendgrid->send($email);
-var_dump($response);
+$sendgrid->send($email);
 ?>
