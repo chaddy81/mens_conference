@@ -15,11 +15,13 @@ if (!empty($_POST)) {
   $email->addTo($to)->
          setFrom($to)->
          setSubject('Contact From Mens Conference Site')->
-         setText($email . '/r/n' . $phone . '/r/n' . $message)->
-         setHtml($email . '<br />' . $phone . '<br />' . $message)->
+         setText($message)->
+         setHtml($message)->
          addHeader('X-Sent-Using', 'SendGrid-API')->
          addHeader('X-Transport', 'web');
 
   $sendgrid->send($email);
+}else{
+  echo 'Need to fill out the form';
 }
 ?>
