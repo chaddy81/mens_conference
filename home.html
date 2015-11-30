@@ -486,7 +486,7 @@
             type: 'POST',
             data: data
           }).done(function(response) {
-            console.log(response);
+            $('#contact .message').text(response);
           });
 
         });
