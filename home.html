@@ -472,5 +472,24 @@
     </script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      $(function() {
+        $('#contact form').on('submit', function(e) {
+          e.preventDefault();
+
+          var data = $(this).serialize();
+          var submitUrl = $(this).attr('action');
+
+          $.ajax({
+            url: submitUrl,
+            type: 'POST',
+            data: data
+          }).done(function(response) {
+            console.log(response);
+          });
+
+        });
+      });
+    </script>
   </body>
 </html>
