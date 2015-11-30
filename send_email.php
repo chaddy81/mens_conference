@@ -10,13 +10,15 @@ if (!empty($_POST)) {
   $phone = $_POST['phone'];
   $message = $_POST['message'];
 
+  $msg = $email . "\n" . $phone . "\n" . $message;
+
   $sendgrid = new SendGrid($sendgrid_username, $sendgrid_password, array("turn_off_ssl_verification" => true));
   $email    = new SendGrid\Email();
   $email->addTo($to)->
          setFrom($to)->
          setSubject('Contact From Mens Conference Site')->
-         setText($message)->
-         setHtml($message)->
+         setText($msg)->
+         setHtml($msg)->
          addHeader('X-Sent-Using', 'SendGrid-API')->
          addHeader('X-Transport', 'web');
 
