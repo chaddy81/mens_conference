@@ -10,7 +10,7 @@ if (!empty($_POST)) {
   $phone = $_POST['phone'];
   $message = $_POST['message'];
 
-  $msg = $email . "\n" . $phone . "\n" . $message;
+  $msg = "$email \r\n $phone \r\n $message";
 
   $sendgrid = new SendGrid($sendgrid_username, $sendgrid_password, array("turn_off_ssl_verification" => true));
   $email    = new SendGrid\Email();
