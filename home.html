@@ -487,6 +487,7 @@
             data: data
           }).done(function(response) {
             $('#contact .message').text(response);
+            $('#contact form').trigger('reset');
           });
 
         });
