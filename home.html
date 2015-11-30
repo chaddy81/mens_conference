@@ -333,10 +333,10 @@
               <h1>Lead My Family</h1>
               <h3>Emotionally • Financially • Spiritually</h3>
               <h4>Contact Us</h4>
-              <form action="send_email.php">
+              <form method="POST" action="send_email.php">
                 <p><input type="text" name="email" placeholder="Email" /></p>
                 <p><input type="text" name="phone" placeholder="Phone" /></p>
-                <p><textarea rows="6" placeholder="Message"></textarea></p>
+                <p><textarea rows="6" name="message" placeholder="Message"></textarea></p>
                 <p><input type="submit" value="Submit" class="btn btn-red" /></p>
               </form>
             </div>
