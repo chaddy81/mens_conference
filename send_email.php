@@ -23,7 +23,7 @@ if (!empty($_POST)) {
          addHeader('X-Transport', 'web');
 
   $sendgrid->send($email);
-  echo 'Your message has been submitted.'
+  echo 'Your message has been submitted.';
 }else{
   echo 'Need to fill out the form';
 }
