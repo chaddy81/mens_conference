@@ -246,14 +246,18 @@ footer {
       }
     }
 
-    .contact {
+    .vendor {
       background: url('../img/contact-back.jpg') center center no-repeat;
       background-size: cover;
       height: 50%;
       position: relative;
 
       .btn {
+        box-sizing: border-box;
+        font-size: 16px;
+        height: 39px;
         left: 50%;
+        line-height: 27px;
         margin-left: -100px;
         position: absolute;
         top: 50%;

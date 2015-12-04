@@ -48,8 +48,8 @@ footer a, footer a:hover { color: #fff; }
 .details-row .details-4 { padding: 0; }
 .details-row .details-4 .sponsors { background: url("../img/sponsor-back.jpg") center center no-repeat; background-size: cover; height: 50%; position: relative; }
 .details-row .details-4 .sponsors .btn { left: 50%; margin-left: -100px; position: absolute; top: 50%; transform: translateY(-50%); }
-.details-row .details-4 .contact { background: url("../img/contact-back.jpg") center center no-repeat; background-size: cover; height: 50%; position: relative; }
-.details-row .details-4 .contact .btn { left: 50%; margin-left: -100px; position: absolute; top: 50%; transform: translateY(-50%); }
+.details-row .details-4 .vendor { background: url("../img/contact-back.jpg") center center no-repeat; background-size: cover; height: 50%; position: relative; }
+.details-row .details-4 .vendor .btn { box-sizing: border-box; font-size: 16px; height: 39px; left: 50%; line-height: 27px; margin-left: -100px; position: absolute; top: 50%; transform: translateY(-50%); }
 
 /* Modal */
 .modal-backdrop { background: url("../img/modal-back.png") center center no-repeat; background-size: cover; }
