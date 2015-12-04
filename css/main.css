@@ -27,8 +27,9 @@ footer a, footer a:hover { color: #fff; }
 .speaker.speaker-3 { background: url("../img/mitchell.jpg") center center no-repeat; background-size: cover; }
 .speaker.speaker-4 { background: url("../img/soave.jpg") center center no-repeat; background-size: cover; }
 .speaker.speaker-5 { background: url("../img/tba.jpg") center center no-repeat; background-size: cover; }
-.speaker .speaker-details { bottom: 15px; color: #fff; position: absolute; text-transform: uppercase; }
+.speaker .speaker-details { bottom: 15px; color: #fff; position: absolute; text-shadow: 1px 1px rgba(0, 0, 0, 0.3); text-transform: uppercase; }
 .speaker .speaker-details p { font-size: 12px; font-weight: 500; line-height: 1.6; margin: 0; }
+.speaker .speaker-details p.bio { margin-top: 10px; }
 .speaker .speaker-details h4 { font-size: 21px; font-weight: 400; line-height: 1; margin: 0; }
 
 /* Details */
@@ -59,8 +60,8 @@ footer a, footer a:hover { color: #fff; }
 .modal-content h3 { color: #2a2a2a; font-size: 24px; font-weight: 200; margin-bottom: 25px; margin-top: 5px; }
 
 .modal-footer { border: none; }
-.modal-footer p { color: #cf5530; font-size: 18px; }
-.modal-footer .btn, .modal-footer .btn:hover { border-color: #70352d; color: #70352d; font-size: 12px; margin-left: 20px; margin-top: -3px; padding: 8px 12px 6px; width: 155px; }
+.modal-footer p { color: #cf5530; font-size: 16px; }
+.modal-footer .btn, .modal-footer .btn:hover { border-color: #70352d; color: #70352d; font-size: 12px; margin-left: 20px; margin-top: -3px; padding: 8px 12px 6px; width: 200px; }
 
 #sponsors img { padding: 20px; }
 #sponsors p { margin-top: 20px; }
@@ -75,10 +76,10 @@ footer a, footer a:hover { color: #fff; }
 #accomodations ul li { margin-bottom: 20px; }
 #accomodations ul a { display: block; margin-top: 5px; }
 
-#contact form { margin: 20px auto; width: 280px; }
-#contact input[type=text], #contact textarea { border: 1px solid #ccc; font-size: 16px; padding: 5px; width: 100%; }
-#contact input[type=submit] { border-color: #70352d; color: #70352d; font-size: 16px; width: 100%; }
-#contact .message { color: #2a2a2a; font-size: 16px; font-weight: 600; }
+#contact form, #vendor form { margin: 20px auto; width: 280px; }
+#contact input[type=text], #contact textarea, #vendor input[type=text], #vendor textarea { border: 1px solid #ccc; font-size: 16px; padding: 5px; width: 100%; }
+#contact input[type=submit], #vendor input[type=submit] { border-color: #70352d; color: #70352d; font-size: 16px; width: 100%; }
+#contact .message, #vendor .message { color: #2a2a2a; font-size: 16px; font-weight: 600; }
 
 /* Media Queries */
 @media (max-width: 991px) { .navbar .navbar-header { display: block; float: none; text-align: center; }
