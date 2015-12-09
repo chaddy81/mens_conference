@@ -26,7 +26,6 @@ body {
 
 .navbar {
   margin: 0 auto;
-  // max-width: 992px;
   padding: 0 15px;
 
   .navbar-header .navbar-brand {
@@ -191,14 +190,25 @@ footer {
   }
 
   .details-1 {
-    background: #E4C598 url('../img/logo.png') center center no-repeat;
-    background-size: cover;
+    background: #E4C598;
 
-    a {
-      cursor: pointer;
-      display: block;
-      height: 100%;
-      width: 100%;
+    img {
+      left: 50%;
+      position: absolute;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      top: -30px;
+      width: 75%;
+    }
+
+    .btn {
+      bottom: 60px;
+      left: 50%;
+      position: absolute;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
     }
   }
 
@@ -213,7 +223,9 @@ footer {
       bottom: 60px;
       left: 50%;
       position: absolute;
-      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
      }
   }
 
@@ -225,7 +237,9 @@ footer {
       bottom: 60px;
       left: 50%;
       position: absolute;
-      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
     }
   }
 
@@ -242,7 +256,9 @@ footer {
         margin-left: -100px;
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
       }
     }
 
@@ -261,7 +277,9 @@ footer {
         margin-left: -100px;
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
       }
     }
   }
