@@ -190,7 +190,8 @@ footer {
   }
 
   .details-1 {
-    background: #E4C598;
+    background: url('../img/logo-back.png') center center no-repeat;
+    background-size: cover;
 
     img {
       left: 50%;
