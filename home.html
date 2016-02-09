@@ -15,6 +15,20 @@
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
     <![endif]-->
+  <!-- Facebook Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '1722630884619171');
+  fbq('track', "PageView");</script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1722630884619171&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
 </head>
 
 <body>
@@ -27,7 +41,6 @@
       </div>
       <div id="navbar" class="navbar-right">
         <span>Join Us March 5, 2016 in Green Bay, Wisconsin</span>
-        <!-- <a class="btn" data-toggle="modal" data-target="#register">register now</a> -->
         <a class="btn" href="http://www.cvent.com/d/rfq7x2/4W" target="_blank">register now</a>
       </div>
       <!--/.navbar-collapse -->
@@ -83,9 +96,13 @@
           <li>March 5, 2016</li>
           <li>KI Convention Center</li>
           <li>333 Main St, Green Bay, WI 54301</li>
-          <li>(920) 432-1234</li>
+          <li>(920) 432-1234 &#8226; <a href="parking-map.pdf" target="_blank" style="color: #fff; text-decoration: underline;">Parking Map</a></li>
         </ul>
-        <p>Admission: $50/ticket</p>
+        <ul class="admission">
+          <li>General admission: $50</li>
+          <li>Student admission: $25</li>
+          <li>Priest, deacon, religious, seminarian or pastor: No charge</li>
+        </ul>
         <div class="btn-container text-center">
           <a class="btn btn-default" href="#" role="button" data-toggle="modal" data-target="#event-details">More</a>
         </div>
@@ -144,7 +161,7 @@
           <div class="modal-footer">
             <p>
               Join Us March 5, 2016 in Green Bay, Wisconsin
-              <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#register">register now</button> -->
+         
               <a class="btn" href="http://www.cvent.com/d/rfq7x2/4W" target="_blank">register now</a>
             </p>
           </div>
@@ -159,6 +176,7 @@
             <h1>Men For All Seasons</h1>
             <h3>Courage • Faith • Action</h3>
             <h4>Schedule</h4>
+            <a href="parking-map.pdf" target="_blank" style="display: inline-block;line-height: 1.5; font-size: 18px;margin-bottom: 25px;">Parking Map</a>
             <table>
               <thead>
                 <tr>
@@ -259,7 +277,7 @@
           <div class="modal-footer">
             <p>
               Join Us March 5, 2016 in Green Bay, Wisconsin
-              <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#register">register now</button> -->
+          
               <a class="btn" href="http://www.cvent.com/d/rfq7x2/4W" target="_blank">register now</a>
             </p>
           </div>
@@ -308,7 +326,7 @@
           <div class="modal-footer">
             <p>
               Join Us March 5, 2016 in Green Bay, Wisconsin
-              <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#register">register now</button> -->
+            
               <a class="btn" href="http://www.cvent.com/d/rfq7x2/4W" target="_blank">register now</a>
             </p>
           </div>
@@ -322,17 +340,85 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <h1>Men For All Seasons</h1>
             <h3>Courage • Faith • Action</h3>
-            <h4>Presenting Sponsors</h4>
-            <a href="http://www.gbdioc.org"><img src="img/diocese_of_green_bay.png" /></a>
-            <a href="http://www.norbertines.org"><img src="img/st_norbert_abbey.png" /></a>
-            <a href="http://www.estovir.com"><img src="img/est_vir.png" /></a>
+            <div class="sponsor" data-per-row="1">
+              <h4>Hosts</h4>
+              <p><a href="http://www.gbdioc.org" target="_blank"><img src="img/diocese_of_green_bay.png" /></a></p>
+              <p><a href="http://www.norbertines.org" target="_blank"><img src="img/st_norbert_abbey.png" /></a></p>
+              <p><a href="http://www.estovir.com" target="_blank"><img src="img/est_vir.png" /></a></p>
+            </div>
+            <div class="sponsor" data-per-row="1">
+              <h4>Lead Sponsor</h4>
+              <p><a data-toggle="modal" data-target="#contact">Still available</a></p>
+            </div>
+            <div class="sponsor" data-per-row="1">
+              <h4>Breakfast Sponsor</h4>
+              <p><a data-toggle="modal" data-target="#contact">Still available</a></p>
+            </div>
+            <div class="sponsor" data-per-row="1">
+              <h4>Lunch Sponsor</h4>
+              <p><a data-toggle="modal" data-target="#contact">Still available</a></p>
+            </div>
+            <div class="sponsor" data-per-row="2">
+              <h4>
+                <span style="width: 50%;text-align: center;">Media Sponsor</span> 
+                <span style="width: 50%;text-align: center;">Web Sponsor</span>
+              </h4>
+              <p>
+                <a href="http://www.wearegreenbay.com/" target="_blank"><img src="img/local5.png" /></a>
+                <a href="http://www.entrision.com" target="_blank"><img src="img/entrision.png" /></a>
+              </p>
+            </div>
+            <div class="sponsor" data-per-row="2">
+              <h4>Platinum Sponsor</h4>
+              <p>
+                <a data-toggle="modal" data-target="#contact">Still available</a>
+                <a data-toggle="modal" data-target="#contact">Still available</a>
+              </p>
+            </div>
+            <div class="sponsor" data-per-row="2">
+              <h4>Gold Sponsor</h4>
+              <p>
+                <a href="http://www.advancedarcheryhilbert.com/" target="_blank"><img src="img/advanced-archery.jpg" /></a>
+                <a href="http://www.thebusinessnewsonline.com/" target="_blank"><img src="img/business-news.png" /></a>
+              </p>
+              <p>
+                <a href="http://www.catholicfinanciallife.org/" target="_blank"><img src="img/catholic-financial.jpg" /></a>
+                <a href="http://www.jonesoutdoor.co/" target="_blank"><img src="img/jones-sign.png" /></a>
+              </p>
+              <p>
+                <a href="https://www.nicoletbank.com/" target="_blank"><img src="img/nicolet.jpg" /></a>
+                <a href="http://villagehearthstone.com/" target="_blank"><img src="img/village.png" /></a>
+              </p>
+            </div>
+            <div class="sponsor" data-per-row="3">
+              <h4>Silver Sponsor</h4>
+              <p>
+                <a href="http://candccustombuilders.com/" target="_blank"><img src="img/candc-logo.jpg" /></a>
+                <a href="http://www.fvmt.com/" target="_blank"><img src="img/fox-valley.jpg" /></a>
+                <a href="http://www.packerfastener.com/" target="_blank"><img src="img/packer-fastener.jpg" /></a>
+              </p>
+              <p>
+                <a data-toggle="modal" data-target="#contact">Still available</a>
+                <a data-toggle="modal" data-target="#contact">Still available</a>
+                <a data-toggle="modal" data-target="#contact">Still available</a>
+              </p>
+            </div>
+            <div class="sponsor" data-per-row="4">
+              <h4>Bronze Sponsor</h4>
+              <p>
+                <a href="http://www.greenbaypregnancyhelp.com/" target="_blank"><img src="img/aanda-logo.jpg" /></a>
+                <a data-toggle="modal" data-target="#contact">Still available</a>
+                <a data-toggle="modal" data-target="#contact">Still available</a>
+                <a data-toggle="modal" data-target="#contact">Still available</a>
+              </p>
+            </div>
             <p><a href="" data-toggle="modal" data-target="#contact">Interested in being a sponsor?</a></p>
             <p>The 2016 Green Bay Men’s Conference is offering various sponsorship opportunities for partner organizations. If you are interested in learning more about these possibilities, please contact us <a href="" data-toggle="modal" data-target="#contact">here</a> and we will contact you personally to discuss further.</p>
           </div>
           <div class="modal-footer">
             <p>
               Join Us March 5, 2016 in Green Bay, Wisconsin
-              <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#register">register now</button> -->
+  
               <a class="btn" href="http://www.cvent.com/d/rfq7x2/4W" target="_blank">register now</a>
             </p>
           </div>
@@ -366,7 +452,7 @@
           <div class="modal-footer">
             <p>
               Join Us March 5, 2016 in Green Bay, Wisconsin
-              <!-- <button type="button" class="btn btn-red" data-toggle="modal" data-target="#register">register now</button> -->
+
               <a class="btn" href="http://www.cvent.com/d/rfq7x2/4W" target="_blank">register now</a>
             </p>
           </div>
@@ -387,7 +473,7 @@
           <div class="modal-footer">
             <p>
               Join Us March 5, 2016 in Green Bay, Wisconsin
-              <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#register">register now</button> -->
+
               <a class="btn" href="http://www.cvent.com/d/rfq7x2/4W" target="_blank">register now</a>
             </p>
           </div>
@@ -408,7 +494,7 @@
           <div class="modal-footer">
             <p>
               Join Us March 5, 2016 in Green Bay, Wisconsin
-              <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#register">register now</button> -->
+            
               <a class="btn" href="http://www.cvent.com/d/rfq7x2/4W" target="_blank">register now</a>
             </p>
           </div>
@@ -428,7 +514,7 @@
           <div class="modal-footer">
             <p>
               Join Us March 5, 2016 in Green Bay, Wisconsin
-              <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#register">register now</button> -->
+         
               <a class="btn" href="http://www.cvent.com/d/rfq7x2/4W" target="_blank">register now</a>
             </p>
           </div>
@@ -448,7 +534,7 @@
           <div class="modal-footer">
             <p>
               Join Us March 5, 2016 in Green Bay, Wisconsin
-              <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#register">register now</button> -->
+              
               <a class="btn" href="http://www.cvent.com/d/rfq7x2/4W" target="_blank">register now</a>
             </p>
           </div>
@@ -469,7 +555,7 @@
           <div class="modal-footer">
             <p>
               Join Us March 5, 2016 in Green Bay, Wisconsin
-              <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#register">register now</button> -->
+              
               <a class="btn" href="http://www.cvent.com/d/rfq7x2/4W" target="_blank">register now</a>
             </p>
           </div>
@@ -504,40 +590,13 @@
           <div class="modal-footer">
             <p>
               Join Us March 5, 2016 in Green Bay, Wisconsin
-              <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#register">register now</button> -->
+            
               <a class="btn" href="http://www.cvent.com/d/rfq7x2/4W" target="_blank">register now</a>
             </p>
           </div>
         </div>
       </div>
     </div>
-    <!-- <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-body text-center">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h1>Men For All Seasons</h1>
-        <h3>Courage • Faith • Action</h3>
-        <h4>Register</h4>
-        <div class="cvt-main-app" data-widget-url="//www.cvent.com/m-events/Widgets/Widget?e=8d92382e-e2c2-41dc-aa9a-692a93b84895&ws=6a3bf55f-078b-4c69-a364-5cbc392dbf94">
-          <script type="text/javascript">
-          window.cvtDomain = 'www.cvent.com';
-          var cventWidgetLoaderScript = document.createElement('script');
-          var numberOfHoursFrom1970 = new Date().getTime() / (3600 * 1000);
-          cventWidgetLoaderScript.src = '//www.cvent.com/g/mobile/javascript/widget-loader.js?versioninhrs=' + numberOfHoursFrom1970;
-          document.getElementsByTagName('head')[0].appendChild(cventWidgetLoaderScript);
-          </script>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <p class="text-center">
-          Join Us March 5, 2016 in Green Bay, Wisconsin
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
- -->
   </div>
   <!-- /container -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

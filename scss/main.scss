@@ -205,6 +205,13 @@ footer {
     p {
       font-size: 14px;
     }
+    ul.admission {
+      margin-top: -25px;
+
+      li {
+        font-size: 14px;
+      }
+    }
     .btn {
       bottom: 60px;
       left: 50%;
@@ -271,6 +278,8 @@ footer {
 .modal-backdrop {
   background: url('../img/modal-back.png') center center no-repeat;
   background-size: cover;
+  height: 100% !important;
+  position: fixed;
   &.in {
     opacity: 1;
   }
@@ -311,15 +320,74 @@ footer {
 }
 
 #sponsors {
-  img {
-    padding: 20px;
+  h4 {
+    font-size: 21px;
+    font-weight: 600;
+    margin: 35px 0 20px;
+    text-decoration: underline;
   }
+
   p {
     margin-top: 20px;
     a {
       color: #cf5530;
       font-size: 16px;
       text-decoration: underline;
+    }
+  }
+
+  [data-per-row] {
+    margin-bottom: 30px;
+  }
+
+  [data-per-row="1"] {
+    a {
+      display: inline-block;
+      margin: 0 0 10px;
+      max-width: 212px;
+      width: 95%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  [data-per-row="2"] {
+    a {
+      display: inline-block;
+      margin: 0 10px;
+      width: 42%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  [data-per-row="3"] {
+    a {
+      display: inline-block;
+      margin: 0 10px;
+      width: 28%;
+    }
+
+    img {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+  }
+
+  [data-per-row="4"] {
+    a {
+      display: inline-block;
+      margin: 0 5px;
+      width: 22%;
+    }
+
+    img {
+      margin-bottom: 10px;
+      width: 100%;
     }
   }
 }
